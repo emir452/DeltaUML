@@ -24,12 +24,13 @@ switch(extension)
                     {
                         return new SequenceDiagramCreationStrategi();
 }
-                default:
+                case ".xlsx":
                     {
-                       StreamWriter sw = new StreamWriter("Path error.txt");
-                        sw.WriteLine(path);
-                        sw.Close();
-                                                throw new UnSuportedOperationException();
+                        return new ExcelCreationStrategui();
+                    }
+default:
+                    {
+throw new UnSuportedOperationException();
 }
 }
 }

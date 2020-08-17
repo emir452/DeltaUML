@@ -1,6 +1,7 @@
 ﻿using core.common;
 using core.diagrams;
 using core.diagrams.sequenceDiagram;
+using presentation.utils;
 using System;
 using System.ComponentModel;
 using System.Windows.Forms;
@@ -56,16 +57,27 @@ foreach( Control i in tlp.Controls)
             try
             {
                 this.AddDiagramControlInPanel(FormManager.GetInstance().CreateClasDiagramView((ClassDiagram)this.getSelectedLeaf()));
+                return;
             }
             catch (Exception)
-            { }
+{ }
             try
             {
                 this.AddDiagramControlInPanel(FormManager.GetInstance().CreateSequenceDiagramView((SequenceDiagram)getSelectedLeaf(), this));
-            }
+                return;
+}
             catch (Exception)
+{ }
+            try
             {
+                new FileOpener().OpenFile(getSelectedLeaf().GetPath());
+                return;
             }
+            catch(Exception)
+            {
+                MessageBox.Show("ha habido un error, no tiene Office instalado o hay problemas con las librerías", "problemas con Office", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
         private void FrmClosing_click(object sender, CancelEventArgs e)
         {

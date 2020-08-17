@@ -1,8 +1,9 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
+
 namespace presentation.diagramViews.sequenceDiagramView
 {
-    partial class FRMObjectViewer
+    partial class FRMInteractionViewer
     {
         /// <summary>
         /// Required designer variable.
@@ -32,31 +33,28 @@ namespace presentation.diagramViews.sequenceDiagramView
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Dock = DockStyle.Fill;
-            this.Text = "Visualizador de objetos";
             tlp = new TableLayoutPanel();
-            tlp.BackColor = Color.Blue;
-            tlp.Dock = DockStyle.Fill;
             tlp.ColumnCount = 1;
             tlp.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f));
             tlp.RowCount = 1;
-            tlp.RowStyles.Add(new RowStyle(SizeType.Percent, 100f));
+            tlp.RowStyles.Add(new RowStyle(SizeType.Percent));
+            tlp.BackColor = Color.Blue;
+            tlp.Dock = DockStyle.Fill;
             dgv = new DataGridView();
-            dgv.ColumnCount = 2;
-            dgv.Columns[0].Name = "nombre de objeto";
-            dgv.Columns[1].Name = "nombre de clase";
             dgv.RowHeadersVisible = true;
+            dgv.ColumnCount = 3;
+            dgv.Columns[0].Name = "emisor: objeto que emite el mensaje";
+            dgv.Columns[1].Name = "receptor: objeto que recibe el mensaje";
+            dgv.Columns[2].Name = "mensaje: el mensaje (o método) enviado";
             dgv.Dock = DockStyle.Fill;
             this.SetUpDGV();
-tlp.Controls.Add(dgv, 0, 0);
+            tlp.Controls.Add(dgv, 0, 0);
             this.Controls.Add(tlp);
-
-            // finisht
         }
 
         #endregion
-        private DataGridView dgv;
         private TableLayoutPanel tlp;
-    }
+        private DataGridView dgv;
+}
 }

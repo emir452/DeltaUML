@@ -10,9 +10,15 @@ namespace presentation
         {
             fm = FormManager.GetInstance();
         }
-        public MenuStrip CreateMenu()
+        public virtual MenuStrip CreateMenu()
         {
             MenuStrip ms = new MenuStrip();
+            
+            ms.Items.Add(CreateFileMenu());
+            return ms;
+        }
+        public ToolStripMenuItem CreateFileMenu()
+        {
             ToolStripMenuItem newProgect = new ToolStripMenuItem();
             newProgect.Text = "nuevo proyecto";
             newProgect.Click += new EventHandler(NewProgect_click);
@@ -25,15 +31,14 @@ namespace presentation
             ToolStripMenuItem exit = new ToolStripMenuItem();
             exit.Text = "salir";
             exit.Click += new EventHandler(Exit_click);
-                        ToolStripMenuItem file = new ToolStripMenuItem();
+            ToolStripMenuItem file = new ToolStripMenuItem();
             file.Text = "archivo";
             file.DropDownItems.Add(newProgect);
             file.DropDownItems.Add(openExistingProgect);
             file.DropDownItems.Add(aboutUs);
             file.DropDownItems.Add(exit);
-            ms.Items.Add(file);
-            return ms;
-        }
+            return file;
+}
         private void Exit_click(object sender, EventArgs e)
         {
             Application.Exit();

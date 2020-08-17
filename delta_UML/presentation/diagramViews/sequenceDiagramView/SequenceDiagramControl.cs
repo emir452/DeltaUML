@@ -13,27 +13,28 @@ namespace presentation.diagramViews.sequenceDiagramView
 {
     public partial class SequenceDiagramControl : UserControl
     {
-        private    UserControl  frmObjectViewer;
-        private Form interaction;
+        private FRMObjectViewer objectViewer;
+        private FRMInteractionViewer interactionViewer;
         private FRMProgectView fpv;
         private SequenceDiagram sd;
 
         public SequenceDiagramControl(SequenceDiagram sd, FRMProgectView fpv)
         {
             this.sd = sd;
-            frmObjectViewer = new FRMObjectViewer(sd.objectDeclarations);
-            interaction = new InteractionDetailViewer(sd.interactionDetails, sd.objectDeclarations);
-            this.fpv = fpv;
+             objectViewer= new FRMObjectViewer(sd.objectDeclarations);
+            interactionViewer = new FRMInteractionViewer(sd.interactionDetails);
+this.fpv = fpv;
+            this.ContextMenu =new ContextMenuManager(this).CreateMenu();
             InitializeComponent();
+            
         }
         private void  BtnOvjectsViewer_click(object sender, EventArgs e)
         {
-            fpv.AddDiagramControlInPanel(frmObjectViewer);
+            objectViewer.Visible=true;
 }
         private void  BtnInteractionsViewer_click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            interaction.ShowDialog();
-        }
+            interactionViewer.Visible = true;
+}
     }
 }

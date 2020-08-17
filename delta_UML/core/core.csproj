@@ -56,9 +56,11 @@
     <Compile Include="diagrams\Diagram.cs" />
     <Compile Include="diagrams\diagramCreators\ClassDiagramCreationStrategi.cs" />
     <Compile Include="diagrams\diagramCreators\DiagramCreationContext.cs" />
+    <Compile Include="diagrams\diagramCreators\ExcelCreationStrategui.cs" />
     <Compile Include="diagrams\diagramCreators\IdiagramCreationStrategi.cs" />
     <Compile Include="diagrams\diagramCreators\SequenceDiagramCreationStrategi.cs" />
     <Compile Include="common\Element.cs" />
+    <Compile Include="diagrams\ExcelDataRepresentation.cs" />
     <Compile Include="diagrams\sequenceDiagram\InteractionDetail.cs" />
     <Compile Include="diagrams\sequenceDiagram\ObjectDeclaration.cs" />
     <Compile Include="diagrams\sequenceDiagram\SequenceDiagram.cs" />

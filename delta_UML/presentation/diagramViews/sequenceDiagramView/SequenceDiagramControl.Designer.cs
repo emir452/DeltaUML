@@ -53,7 +53,7 @@ namespace presentation.diagramViews.sequenceDiagramView
             tlp.Controls.Add(btnObjectsViewer, 0, 0);
             tlp.Controls.Add(btnInteractionsViewer, 1, 0);
             this.Controls.Add(tlp);
-
+            
 
 
 }

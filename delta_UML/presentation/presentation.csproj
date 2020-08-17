@@ -42,8 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="diagramViews\sequenceDiagramView\ContextMenuManager.cs" />
+    <Compile Include="diagramViews\sequenceDiagramView\FRMInteractionViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diagramViews\sequenceDiagramView\FRMInteractionViewer.Designer.cs">
+      <DependentUpon>FRMInteractionViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="diagramViews\sequenceDiagramView\FRMObjectViewer.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="diagramViews\sequenceDiagramView\FRMObjectViewer.Designer.cs">
       <DependentUpon>FRMObjectViewer.cs</DependentUpon>
@@ -73,19 +80,7 @@
     <Compile Include="diagramViews\classDiagramView\FRMClassGenerator.Designer.cs">
       <DependentUpon>FRMClassGenerator.cs</DependentUpon>
     </Compile>
-    <Compile Include="diagramViews\sequenceDiagramView\CustomTextBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="diagramViews\sequenceDiagramView\InteractionDetailControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="diagramViews\sequenceDiagramView\InteractionDetailViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="diagramViews\sequenceDiagramView\IUpdater.cs" />
-    <Compile Include="diagramViews\sequenceDiagramView\ObjectDeclarationControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="utils\FileOpener.cs" />
     <Compile Include="utils\FormManager.cs" />
     <Compile Include="main\FRMMain.cs">
       <SubType>Form</SubType>

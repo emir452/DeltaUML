@@ -1,46 +1,45 @@
-﻿using core.diagrams.sequenceDiagram;
+﻿using presentation.utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using core.diagrams.sequenceDiagram;
 namespace presentation.diagramViews.sequenceDiagramView
 {
-    public partial class FRMObjectViewer : UserControl
+    public partial class FRMObjectViewer : FRMCommonEvents
     {
-        private List<ObjectDeclaration> lstObjectDeclarations;
-        public FRMObjectViewer(List<ObjectDeclaration> objectDeclarations)
+         public  BindingList<ObjectDeclaration> objectDeclarations { get;}
+        public FRMObjectViewer(IList<ObjectDeclaration> objectDeclarations)
         {
-             this.lstObjectDeclarations = objectDeclarations;
+            this.objectDeclarations = new BindingList<ObjectDeclaration>(objectDeclarations);
+           
             InitializeComponent();
-            this.Focus();
         }
-        private void FillObjectControls()
+        public override void ExitForm(object sender, KeyPressEventArgs e)
         {
-            if (lstObjectDeclarations.Count == 0)
+            if (e.KeyChar == Convert.ToChar(Keys.Escape))
             {
-                lstObjectDeclarations.Add(new ObjectDeclaration());
-            }
-            foreach (ObjectDeclaration i in lstObjectDeclarations)
-            {
-                ObjectDeclarationControl  odc = new ObjectDeclarationControl(i);
-                odc.Dock = DockStyle.Fill;
-                lstObjectControls.Controls.Add(odc);
+                this.Visible = false;
             }
         }
- private  void BtnNewObject_click(object ender, EventArgs e)
+        private void SetUpDGV()
+        {
+            if (objectDeclarations.Count == 0)
             {
-            ObjectDeclarationControl odc = new ObjectDeclarationControl(new ObjectDeclaration());
-            odc.Dock = DockStyle.Fill;
-                lstObjectControls.Controls.Add(odc);
-            odc.Focus();
-}
+                ObjectDeclaration od = new ObjectDeclaration();
+                od.objectName = "Object1";
+                od.className = "Class1";
+                objectDeclarations.Add(od);
+            }
+            dgv.DataSource = objectDeclarations;
+        }
 
-}
+    }
+   
+
 }

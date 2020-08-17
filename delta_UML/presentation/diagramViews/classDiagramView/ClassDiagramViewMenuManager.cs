@@ -45,8 +45,6 @@ namespace presentation.diagramViews.classDiagramView
             edit.DropDownItems.Add(cut);
             edit.DropDownItems.Add(coppy);
             edit.DropDownItems.Add(paste);
-            ms.Items.Clear();
-            ms.Items.Add(file);
             ms.Items.Add(edit);
             return ms;
         }
