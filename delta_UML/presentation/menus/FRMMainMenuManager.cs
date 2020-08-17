@@ -22,13 +22,21 @@ namespace presentation
             ToolStripMenuItem aboutUs = new ToolStripMenuItem();
             aboutUs.Text = "acerca de";
             aboutUs.Click += new EventHandler(AboutUs_click);
+            ToolStripMenuItem exit = new ToolStripMenuItem();
+            exit.Text = "salir";
+            exit.Click += new EventHandler(Exit_click);
                         ToolStripMenuItem file = new ToolStripMenuItem();
             file.Text = "archivo";
             file.DropDownItems.Add(newProgect);
             file.DropDownItems.Add(openExistingProgect);
             file.DropDownItems.Add(aboutUs);
+            file.DropDownItems.Add(exit);
             ms.Items.Add(file);
             return ms;
+        }
+        private void Exit_click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
         private void AboutUs_click(object sender, EventArgs e)
         {

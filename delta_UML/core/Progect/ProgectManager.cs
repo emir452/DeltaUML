@@ -8,7 +8,8 @@ namespace core.progect
         {
             Progect newProgect = new Progect();
             newProgect.name = newName;
-            newProgect.path = UtilitiManager.GetInstance().dm.CreateDirectory(newPath, newName);
+            newProgect.path = UtilitiManager.GetInstance().ConbinePaths(newPath, newName);
+            UtilitiManager.GetInstance().dm.CreateDirectory(newProgect.path);
             return newProgect;
         }
         public Progect OpenExistinProgect(String path)

@@ -5,9 +5,9 @@ namespace Persistence.folderManager
 {
     public class DirectoryManager : IDirectoryManager
     {
-        public String CreateDirectory(String path, string name)
+        public String CreateDirectory(String path)
         {
-            System.IO.Directory.CreateDirectory(UtilitiManager.GetInstance().ConbinePaths(path, name));
+            System.IO.Directory.CreateDirectory(path);
 
             return path;
         }
@@ -34,10 +34,10 @@ namespace Persistence.folderManager
         }
         public void Delete(String path)
         {
-
+            Directory.Delete(path);
         }
         public void Rename(String path, String newName)
-        {
+{
 
         }
 

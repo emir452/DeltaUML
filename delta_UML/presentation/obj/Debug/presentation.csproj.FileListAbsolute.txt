@@ -11,3 +11,16 @@ D:\delta_UML\presentation\obj\Debug\presentation.dll
 D:\delta_UML\presentation\obj\Debug\presentation.pdb
 D:\delta_UML\presentation\obj\Debug\presentation.utils.AboutUs.resources
 D:\delta_UML\presentation\obj\Debug\presentation.csproj.GenerateResource.cache
+D:\DeltaUML\delta_UML\presentation\bin\Debug\presentation.dll
+D:\DeltaUML\delta_UML\presentation\bin\Debug\presentation.pdb
+D:\DeltaUML\delta_UML\presentation\bin\Debug\core.dll
+D:\DeltaUML\delta_UML\presentation\bin\Debug\Persistence.dll
+D:\DeltaUML\delta_UML\presentation\bin\Debug\core.pdb
+D:\DeltaUML\delta_UML\presentation\bin\Debug\Persistence.pdb
+D:\DeltaUML\delta_UML\presentation\obj\Debug\presentation.csprojAssemblyReference.cache
+D:\DeltaUML\delta_UML\presentation\obj\Debug\presentation.utils.AboutUs.resources
+D:\DeltaUML\delta_UML\presentation\obj\Debug\presentation.csproj.GenerateResource.cache
+D:\DeltaUML\delta_UML\presentation\obj\Debug\presentation.csproj.CoreCompileInputs.cache
+D:\DeltaUML\delta_UML\presentation\obj\Debug\presentation.csproj.CopyComplete
+D:\DeltaUML\delta_UML\presentation\obj\Debug\presentation.dll
+D:\DeltaUML\delta_UML\presentation\obj\Debug\presentation.pdb

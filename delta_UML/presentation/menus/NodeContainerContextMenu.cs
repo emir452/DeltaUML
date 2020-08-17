@@ -44,6 +44,7 @@ namespace presentation
             header.Add("Significado para la arquitectura");
             header.Add("Explicación");
             string path =ctn.leaf.GetPath() + "/" + "prueba.xlsx";
+            new core.fileGenerators.ExcelGenerator().GenerateExcel(header, path);
 }
         private void miNewPackage_click(object sender, EventArgs e)
         {

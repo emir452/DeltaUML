@@ -8,7 +8,7 @@ namespace core.progect
             Package pkg = new Package();
             pkg.name = name;
             pkg.path = UtilitiManager.GetInstance().ConbinePaths(parentPath, name);
-            UtilitiManager.GetInstance().dm.CreateDirectory(pkg.path, pkg.name);
+            UtilitiManager.GetInstance().dm.CreateDirectory(pkg.path);
             return pkg;
         }
     }
