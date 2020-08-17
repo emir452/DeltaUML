@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +11,19 @@ namespace core.fileGenerators
     {
         public void GenerateExcel(IList<string> header, string path)
         {
-            excel.Workbook wb = default(excel.Workbook);
-            excel.Worksheet ws = default(excel.Worksheet);
-            wb.Worksheets.Add(ws);
-            ws.Cells.CreateNames(header);
-            wb.SaveAs(path);
-}
-    }
+            excel.Application ap = new excel.Application();
+            Workbook book=ap.Workbooks.Add();
+            Worksheet sheet = book.Worksheets.Add();
+            int columnCount = 1;
+            foreach(string i in header)
+{
+                sheet.Cells[1, columnCount] = i;
+                columnCount++; 
+            }
+            book.SaveAs(path);
+            book.Close();
+            ap.Quit();
+        }
 
+    }
 }
