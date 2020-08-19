@@ -16,13 +16,13 @@ namespace presentation.diagramViews.sequenceDiagramView
         private FRMObjectViewer objectViewer;
         private FRMInteractionViewer interactionViewer;
         private FRMProgectView fpv;
-        private SequenceDiagram sd;
+        public SequenceDiagram sd { get;}
 
         public SequenceDiagramControl(SequenceDiagram sd, FRMProgectView fpv)
         {
             this.sd = sd;
              objectViewer= new FRMObjectViewer(sd.objectDeclarations);
-            interactionViewer = new FRMInteractionViewer(sd.interactionDetails);
+            interactionViewer = new FRMInteractionViewer(sd.interactionDetails, sd.objectDeclarations);
 this.fpv = fpv;
             this.ContextMenu =new ContextMenuManager(this).CreateMenu();
             InitializeComponent();

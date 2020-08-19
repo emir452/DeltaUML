@@ -38,18 +38,21 @@ namespace presentation.diagramViews.sequenceDiagramView
             tlp.ColumnCount = 1;
             tlp.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f));
             tlp.RowCount = 1;
-            tlp.RowStyles.Add(new RowStyle(SizeType.Percent));
+            tlp.RowStyles.Add(new RowStyle(SizeType.Percent, 100f));
             tlp.BackColor = Color.Blue;
             tlp.Dock = DockStyle.Fill;
             dgv = new DataGridView();
             dgv.RowHeadersVisible = true;
-            dgv.ColumnCount = 3;
-            dgv.Columns[0].Name = "emisor: objeto que emite el mensaje";
-            dgv.Columns[1].Name = "receptor: objeto que recibe el mensaje";
-            dgv.Columns[2].Name = "mensaje: el mensaje (o método) enviado";
             dgv.Dock = DockStyle.Fill;
+            dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgv.ColumnHeadersBorderStyle =DataGridViewHeaderBorderStyle.Single;
+dgv.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+            dgv.DataError += new DataGridViewDataErrorEventHandler(dgvCombo_DataError);
+            dgv.AutoGenerateColumns = false;
+            dgv.MultiSelect = false;
+            dgv.CurrentCellDirtyStateChanged += new System.EventHandler(dgv_CurrentCellDirtyStateChanged);
             this.SetUpDGV();
-            tlp.Controls.Add(dgv, 0, 0);
+                        tlp.Controls.Add(dgv, 0, 0);
             this.Controls.Add(tlp);
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using core.dao;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
@@ -20,8 +21,13 @@ namespace presentation.diagramViews.sequenceDiagramView
        ContextMenu cm = new ContextMenu();
             MenuItem save = new MenuItem();
             save.Text = "guardar";
+            save.Click += new EventHandler(Save_click);
             cm.MenuItems.Add(save);
             return cm;
 }
+        private void Save_click(object sender, EventArgs e)
+        {
+            new SequenceDiagramDao().WriteDiagram(control.sd);
+        }
     }
 }

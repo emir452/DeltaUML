@@ -30,11 +30,13 @@ namespace presentation.diagramViews.sequenceDiagramView
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+                        this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Dock = DockStyle.Fill;
             this.Text = "Visualizador de objetos";
+            this.BackColor = Color.Blue;
+
             tlp = new TableLayoutPanel();
             tlp.BackColor = Color.Blue;
             tlp.Dock = DockStyle.Fill;
@@ -43,11 +45,11 @@ namespace presentation.diagramViews.sequenceDiagramView
             tlp.RowCount = 1;
             tlp.RowStyles.Add(new RowStyle(SizeType.Percent, 100f));
             dgv = new DataGridView();
-            dgv.ColumnCount = 2;
-            dgv.Columns[0].Name = "nombre de objeto";
-            dgv.Columns[1].Name = "nombre de clase";
             dgv.RowHeadersVisible = true;
             dgv.Dock = DockStyle.Fill;
+            dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.Single;
             this.SetUpDGV();
 tlp.Controls.Add(dgv, 0, 0);
             this.Controls.Add(tlp);

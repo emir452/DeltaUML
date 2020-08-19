@@ -59,23 +59,23 @@ foreach( Control i in tlp.Controls)
                 this.AddDiagramControlInPanel(FormManager.GetInstance().CreateClasDiagramView((ClassDiagram)this.getSelectedLeaf()));
                 return;
             }
-            catch (Exception)
+            catch (InvalidCastException)
 { }
             try
             {
-                this.AddDiagramControlInPanel(FormManager.GetInstance().CreateSequenceDiagramView((SequenceDiagram)getSelectedLeaf(), this));
-                return;
+this.AddDiagramControlInPanel(FormManager.GetInstance().CreateSequenceDiagramView((SequenceDiagram)getSelectedLeaf(), this));
+return;
 }
-            catch (Exception)
+            catch (InvalidCastException)
 { }
             try
             {
                 new FileOpener().OpenFile(getSelectedLeaf().GetPath());
                 return;
             }
-            catch(Exception)
+            catch(Exception e)
             {
-                MessageBox.Show("ha habido un error, no tiene Office instalado o hay problemas con las librerías", "problemas con Office", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(e.ToString(), "problemas",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
