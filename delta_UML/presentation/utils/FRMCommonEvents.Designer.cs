@@ -31,6 +31,7 @@ namespace presentation.utils
         {
             this.KeyPreview = true;
             this.KeyPress += new KeyPressEventHandler(ExitForm);
+            this.KeyDown += new KeyEventHandler(CatchShorcuts);
 
         }
 

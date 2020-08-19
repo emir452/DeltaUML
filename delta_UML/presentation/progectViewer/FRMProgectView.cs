@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace presentation
 {
-    public partial class FRMProgectView : Form
+    public partial class FRMProgectView : FRMCommonEvents
     {
         public FRMProgectView(TreeProgectView tpv)
         {
@@ -78,6 +78,13 @@ return;
                 MessageBox.Show(e.ToString(), "problemas",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+}
+        public override void CatchShorcuts(object sender, KeyEventArgs e)
+        {
+            if(Convert.ToInt32(e.KeyData)==( Convert.ToInt32(Keys.Alt)+ Convert.ToInt32(Keys.Control)+Convert.ToInt32(Keys.L)))
+            {
+                tv.Focus();
+            }
         }
         private void FrmClosing_click(object sender, CancelEventArgs e)
         {

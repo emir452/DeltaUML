@@ -21,9 +21,13 @@ namespace presentation.utils
             if (e.KeyChar == Convert.ToChar(Keys.Escape))
             {
                 Application.Restart();
-            }
+}
+}
+        public virtual void CatchShorcuts(object sender, KeyEventArgs e)
+        {
 
         }
+
 
     }
 }
