@@ -1,0 +1,10 @@
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\bin\Debug\DeltaUMLSdk.dll
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\bin\Debug\DeltaUMLSdk.pdb
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\bin\Debug\Persistence.dll
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\bin\Debug\Persistence.pdb
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUML\bin\Debug\Plugins\DeltaUMLSdk.dll
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUML\bin\Debug\Plugins\DeltaUMLSdk.pdb
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.dll
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.pdb
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.csprojAssemblyReference.cache

@@ -1,0 +1,17 @@
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\bin\Debug\ClassDiagramService.dll
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\bin\Debug\ClassDiagramService.pdb
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\bin\Debug\DeltaUMLSdk.dll
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\bin\Debug\Persistence.dll
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\bin\Debug\DeltaUMLSdk.pdb
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\bin\Debug\Persistence.pdb
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\bin\Debug\Plugins\Diagrams\ClassDiagramService.dll
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\bin\Debug\Plugins\Diagrams\ClassDiagramService.pdb
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\bin\Debug\Plugins\Diagrams\DeltaUMLSdk.dll
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\bin\Debug\Plugins\Diagrams\DeltaUMLSdk.pdb
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUML\bin\Debug\Plugins\Diagrams\ClassDiagramService.dll
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUML\bin\Debug\Plugins\Diagrams\ClassDiagramService.pdb
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\obj\Debug\ClassDiagramService.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\obj\Debug\ClassDiagramService.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\obj\Debug\ClassDiagramService.csproj.CopyComplete
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\obj\Debug\ClassDiagramService.dll
+C:\Users\Usuario\source\repos\DeltaUML\ClassDiagramService\obj\Debug\ClassDiagramService.pdb
