@@ -1,0 +1,10 @@
+D:\DeltaUML\delta_UML\DeltaUMLSdk\bin\Debug\DeltaUMLSdk.dll
+D:\DeltaUML\delta_UML\DeltaUMLSdk\bin\Debug\DeltaUMLSdk.pdb
+D:\DeltaUML\delta_UML\DeltaUMLSdk\bin\Debug\DeltaUMLSdk.xml
+D:\DeltaUML\delta_UML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.vbprojAssemblyReference.cache
+D:\DeltaUML\delta_UML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.Resources.resources
+D:\DeltaUML\delta_UML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.vbproj.GenerateResource.cache
+D:\DeltaUML\delta_UML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.vbproj.CoreCompileInputs.cache
+D:\DeltaUML\delta_UML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.dll
+D:\DeltaUML\delta_UML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.xml
+D:\DeltaUML\delta_UML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.pdb

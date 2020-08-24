@@ -28,3 +28,5 @@ D:\DeltaUML\delta_UML\delta_UML\obj\Debug\delta_UML.csproj.CoreCompileInputs.cac
 D:\DeltaUML\delta_UML\delta_UML\obj\Debug\delta_UML.csproj.CopyComplete
 D:\DeltaUML\delta_UML\delta_UML\obj\Debug\delta_UML.exe
 D:\DeltaUML\delta_UML\delta_UML\obj\Debug\delta_UML.pdb
+D:\DeltaUML\delta_UML\delta_UML\bin\Debug\DeltaUMLSdk.dll
+D:\DeltaUML\delta_UML\delta_UML\bin\Debug\DeltaUMLSdk.pdb

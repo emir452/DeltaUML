@@ -1,6 +1,6 @@
-﻿using core.common;
-using core.diagrams.diagramCreators;
+﻿using core.diagrams.diagramCreators;
 using Persistence;
+using DeltaUMLSdk;
 using System;
 namespace core.progect
 {
@@ -22,13 +22,13 @@ namespace core.progect
         }
         public void AddPackages()
         {
-            this.addDiagrams(currentProgect);
+            this.addDiagrams((IComposite) currentProgect);
             foreach (string i in utiliti.dm.GetDirectories(currentProgect.path))
             {
                 Package pkg = new Package();
                 pkg.name = utiliti.dm.GetDirectoryName(i);
                 pkg.path = i;
-                this.addDiagrams(pkg);
+                this.addDiagrams((IComposite)pkg);
                 this.AddPackages(pkg);
                 currentProgect.Add(pkg);
             }
@@ -40,7 +40,7 @@ namespace core.progect
                 Package pkg = new Package();
                 pkg.name = utiliti.dm.GetDirectoryName(i);
                 pkg.path = i;
-                this.addDiagrams(pkg);
+                this.addDiagrams((IComposite)pkg);
                 this.AddPackages(pkg);
                 p.Add(pkg);
             }
@@ -50,7 +50,7 @@ namespace core.progect
             DiagramCreationContext context = new DiagramCreationContext();
             foreach (String i in utiliti.fm.GetFiles(leaf.GetPath()))
             {
-                leaf.Add(context.CreateDiagram(i));
+                leaf.Add((IComposite)context.CreateDiagram( i));
             }
 
         }

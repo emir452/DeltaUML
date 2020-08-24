@@ -1,0 +1,2 @@
+D:\DeltaUML\delta_UML\ClassDiagram\obj\Debug\ClassDiagramComponents.csprojAssemblyReference.cache
+D:\DeltaUML\delta_UML\ClassDiagram\obj\Debug\ClassDiagramComponents.csproj.CoreCompileInputs.cache

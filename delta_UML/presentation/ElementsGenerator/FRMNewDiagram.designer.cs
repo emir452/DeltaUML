@@ -1,5 +1,9 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
+using core.diagrams;
+using System.Collections.Generic;
+using System;
+
 namespace presentation
 {
     partial class FRMNewDiagram
@@ -47,8 +51,6 @@ namespace presentation
             cboSelectDiagrams = new ComboBox();
             cboSelectDiagrams.Text = "elija el tipo de diagrama";
             cboSelectDiagrams.Dock = DockStyle.Fill;
-            cboSelectDiagrams.Items.Add("diagrama de clases");
-            cboSelectDiagrams.Items.Add("diagrama de secuencias");
             lblDiagramName = new Label();
             lblDiagramName.Text = "nombre de diagrama";
             lblDiagramName.Dock = DockStyle.Fill;
@@ -62,6 +64,7 @@ namespace presentation
             tlp.Controls.Add(lblDiagramName, 1, 0);
             tlp.Controls.Add(txtDiagramName, 2, 0);
             tlp.Controls.Add(btnCreateDiagram, 3, 0);
+            this.FillCboSelectDiagrams();
             this.Controls.Add(tlp);
 }
 

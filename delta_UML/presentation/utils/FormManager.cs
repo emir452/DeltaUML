@@ -1,7 +1,4 @@
-﻿using core.diagrams;
-using core.diagrams.sequenceDiagram;
-using presentation.diagramViews.classDiagramView;
-using presentation.diagramViews.sequenceDiagramView;
+﻿using DeltaUMLSdk;
 using System.Drawing;
 using System.Windows.Forms;
 namespace presentation
@@ -25,7 +22,7 @@ namespace presentation
         public void CreateNewProgectForm()
         {
             currentForm.Visible = true;
-            new FRMNewProgect().ShowDialog();
+             new FRMNewProgect().ShowDialog();
         }
         public  Form CreateMain()
         {
@@ -49,14 +46,6 @@ namespace presentation
         public void CreateNewDiagramView(CustomTreeNode parentNode)
         {
             new FRMNewDiagram(parentNode, (FRMProgectView)currentForm).ShowDialog();
-        }
-        public UserControl CreateClasDiagramView(ClassDiagram cd)
-        {
-            return new ClassDiagramControl(cd);
-        }
-        public UserControl CreateSequenceDiagramView(SequenceDiagram sd, FRMProgectView fpv)
-        {
-            return new SequenceDiagramControl(sd, fpv);
         }
         private void DisposeForms()
         {

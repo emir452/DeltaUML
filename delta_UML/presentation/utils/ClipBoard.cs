@@ -1,8 +1,8 @@
-﻿using core.common;
+﻿using DeltaUMLSdk;
 using Persistence;
 namespace presentation
 {
-    class ClipBoard
+     class ClipBoard
     {
         private CustomTreeNode sourceItem;
         private bool isCut;
@@ -22,8 +22,8 @@ namespace presentation
             {
                 return;
             }
-            ModifiFileStructure(sourceItem.leaf, destination.leaf);
-            ModifiMemoriStructure(destination.leaf);
+            ModifiFileStructure((IComposite)sourceItem.leaf, (IComposite)destination.leaf);
+            ModifiMemoriStructure((IComposite)destination.leaf);
             ModifiUIStructure(destination);
 
         }
@@ -45,11 +45,11 @@ namespace presentation
             {
                 CustomTreeNode parent = (CustomTreeNode)sourceItem.Parent;
                 parent.leaf.Remove(sourceItem.leaf);
-                destination.Add(sourceItem.leaf);
+                destination.Add((IComposite)sourceItem.leaf);
             }
             else
             {
-                destination.Add(sourceItem.leaf);
+                destination.Add((IComposite)sourceItem.leaf);
             }
         }
         private void ModifiFileStructure(IComposite source, IComposite destination)

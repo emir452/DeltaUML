@@ -1,7 +1,5 @@
-﻿using core.common;
-using core.diagrams;
-using core.diagrams.sequenceDiagram;
-using presentation.utils;
+﻿using presentation.utils;
+using DeltaUMLSdk;
 using System;
 using System.ComponentModel;
 using System.Windows.Forms;
@@ -50,34 +48,10 @@ foreach( Control i in tlp.Controls)
         private IComposite getSelectedLeaf()
         {
             CustomTreeNode ctn = (CustomTreeNode)tv.SelectedNode;
-            return ctn.leaf;
+            return (IComposite) ctn.leaf;
         }
         private void SelectDiagramControl()
         {
-            try
-            {
-                this.AddDiagramControlInPanel(FormManager.GetInstance().CreateClasDiagramView((ClassDiagram)this.getSelectedLeaf()));
-                return;
-            }
-            catch (InvalidCastException)
-{ }
-            try
-            {
-this.AddDiagramControlInPanel(FormManager.GetInstance().CreateSequenceDiagramView((SequenceDiagram)getSelectedLeaf(), this));
-return;
-}
-            catch (InvalidCastException)
-{ }
-            try
-            {
-                new FileOpener().OpenFile(getSelectedLeaf().GetPath());
-                return;
-            }
-            catch(Exception e)
-            {
-                MessageBox.Show(e.ToString(), "problemas",MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
 }
         public override void CatchShorcuts(object sender, KeyEventArgs e)
         {

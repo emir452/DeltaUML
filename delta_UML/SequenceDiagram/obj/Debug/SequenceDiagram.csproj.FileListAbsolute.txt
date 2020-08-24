@@ -1,0 +1,6 @@
+D:\DeltaUML\delta_UML\SequenceDiagram\bin\Debug\SequenceDiagram.dll
+D:\DeltaUML\delta_UML\SequenceDiagram\bin\Debug\SequenceDiagram.pdb
+D:\DeltaUML\delta_UML\SequenceDiagram\obj\Debug\SequenceDiagram.csprojAssemblyReference.cache
+D:\DeltaUML\delta_UML\SequenceDiagram\obj\Debug\SequenceDiagram.csproj.CoreCompileInputs.cache
+D:\DeltaUML\delta_UML\SequenceDiagram\obj\Debug\SequenceDiagram.dll
+D:\DeltaUML\delta_UML\SequenceDiagram\obj\Debug\SequenceDiagram.pdb

@@ -16,7 +16,7 @@ namespace Persistence
         }
         private UtilitiManager()
         {
-            fm = new FileManager();
+            fm = (IFileManager) new FileManager();
             dm = new DirectoryManager();
         }
         public string ConbinePaths(string path, string name)

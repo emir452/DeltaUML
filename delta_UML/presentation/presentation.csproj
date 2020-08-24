@@ -42,25 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="diagramViews\sequenceDiagramView\ContextMenuManager.cs" />
-    <Compile Include="diagramViews\sequenceDiagramView\FRMInteractionViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="diagramViews\sequenceDiagramView\FRMInteractionViewer.Designer.cs">
-      <DependentUpon>FRMInteractionViewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="diagramViews\sequenceDiagramView\FRMObjectViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="diagramViews\sequenceDiagramView\FRMObjectViewer.Designer.cs">
-      <DependentUpon>FRMObjectViewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="diagramViews\sequenceDiagramView\SequenceDiagramControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="diagramViews\sequenceDiagramView\SequenceDiagramControl.Designer.cs">
-      <DependentUpon>SequenceDiagramControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="exceptions\CanceledOperationException.cs" />
     <Compile Include="utils\AboutUs.cs">
       <SubType>Form</SubType>
@@ -70,16 +51,6 @@
     </Compile>
     <Compile Include="utils\ClipBoard.cs" />
     <Compile Include="progectViewer\CustomTreeNode.cs" />
-    <Compile Include="diagramViews\classDiagramView\ClassDiagramControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="diagramViews\classDiagramView\ClassDiagramViewMenuManager.cs" />
-    <Compile Include="diagramViews\classDiagramView\FRMClassGenerator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="diagramViews\classDiagramView\FRMClassGenerator.Designer.cs">
-      <DependentUpon>FRMClassGenerator.cs</DependentUpon>
-    </Compile>
     <Compile Include="utils\FileOpener.cs" />
     <Compile Include="utils\FormManager.cs" />
     <Compile Include="main\FRMMain.cs">
@@ -117,12 +88,6 @@
     <Compile Include="menus\INodeContextMenu.cs" />
     <Compile Include="menus\NodeContainerContextMenu.cs" />
     <Compile Include="menus\NodeContextMenu.cs" />
-    <Compile Include="utils\FRMCommonEvents.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="utils\FRMCommonEvents.Designer.cs">
-      <DependentUpon>FRMCommonEvents.cs</DependentUpon>
-    </Compile>
     <Compile Include="utils\OpenProgect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="progectViewer\TreeProgectView.cs" />
@@ -136,6 +101,10 @@
     <ProjectReference Include="..\Persistence\Persistence.csproj">
       <Project>{76f914bf-917e-46c7-804f-aedfa2ebfbcc}</Project>
       <Name>Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\DeltaUMLSdk.csproj">
+      <Project>{8f42456f-9f44-4ac8-ac1e-67914ce0825e}</Project>
+      <Name>DeltaUMLSdk</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

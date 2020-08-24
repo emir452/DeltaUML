@@ -37,6 +37,7 @@
       <HintPath>C:\Users\Usuario\Desktop\Microsoft.Office.Interop.Excel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,26 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dao\ClassDiagramDao.cs" />
-    <Compile Include="dao\DiagramDao.cs" />
-    <Compile Include="dao\IClassDiagramDao.cs" />
-    <Compile Include="dao\IDiagramDao.cs" />
-    <Compile Include="dao\ISequenceDiagramDao.cs" />
-    <Compile Include="dao\SequenceDiagramDao.cs" />
-    <Compile Include="diagrams\ClassDiagram.cs" />
-    <Compile Include="diagrams\Diagram.cs" />
-    <Compile Include="diagrams\diagramCreators\ClassDiagramCreationStrategi.cs" />
+    <Compile Include="diagrams\DiagramLoader.cs" />
     <Compile Include="diagrams\diagramCreators\DiagramCreationContext.cs" />
-    <Compile Include="diagrams\diagramCreators\ExcelCreationStrategui.cs" />
-    <Compile Include="diagrams\diagramCreators\IdiagramCreationStrategi.cs" />
-    <Compile Include="diagrams\diagramCreators\SequenceDiagramCreationStrategi.cs" />
     <Compile Include="common\Element.cs" />
     <Compile Include="diagrams\ExcelDataRepresentation.cs" />
-    <Compile Include="diagrams\sequenceDiagram\InteractionDetail.cs" />
-    <Compile Include="diagrams\sequenceDiagram\ObjectDeclaration.cs" />
-    <Compile Include="diagrams\sequenceDiagram\SequenceDiagram.cs" />
     <Compile Include="common\IComposite.cs" />
     <Compile Include="fileGenerators\ExcelGenerator.cs" />
+    <Compile Include="IPluginManager.cs" />
+    <Compile Include="PluginLoader.cs" />
+    <Compile Include="PluginManager.cs" />
     <Compile Include="Progect\IProgectBuilder.cs" />
     <Compile Include="Progect\Package.cs" />
     <Compile Include="Progect\PackageManager.cs" />
@@ -79,6 +69,10 @@
     <ProjectReference Include="..\Persistence\Persistence.csproj">
       <Project>{76f914bf-917e-46c7-804f-aedfa2ebfbcc}</Project>
       <Name>Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\DeltaUMLSdk.csproj">
+      <Project>{8f42456f-9f44-4ac8-ac1e-67914ce0825e}</Project>
+      <Name>DeltaUMLSdk</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
