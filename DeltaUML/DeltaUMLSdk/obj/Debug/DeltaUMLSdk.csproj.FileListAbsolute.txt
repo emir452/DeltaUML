@@ -8,3 +8,9 @@ C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.csproj.
 C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.dll
 C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.pdb
 C:\Users\Usuario\source\repos\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUML\DeltaUML\bin\Debug\Plugins\DeltaUMLSdk.dll
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUML\DeltaUML\bin\Debug\Plugins\DeltaUMLSdk.pdb
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.dll
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.pdb
+C:\Users\Usuario\source\repos\DeltaUML\DeltaUML\DeltaUMLSdk\obj\Debug\DeltaUMLSdk.csprojAssemblyReference.cache

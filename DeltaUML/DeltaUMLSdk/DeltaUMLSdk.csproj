@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Diagram.cs" />
     <Compile Include="DiagramDao.cs" />
+    <Compile Include="DiagramInfo.cs" />
     <Compile Include="Element.cs" />
     <Compile Include="FRMCommonEvents.cs">
       <SubType>Form</SubType>

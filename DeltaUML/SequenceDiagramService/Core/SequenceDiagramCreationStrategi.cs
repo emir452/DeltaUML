@@ -3,7 +3,7 @@ using SequenceDiagramService.Persistence;
 using DeltaUMLSdk;
 using System;
 
-namespace core.diagrams.diagramCreators
+namespace SequenceDiagramService.Core
 {
     public class SequenceDiagramCreationStrategi : IdiagramCreationStrategi
     {

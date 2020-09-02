@@ -1,4 +1,5 @@
 ﻿using ClassDiagramService.Persistence;
+using DeltaUMLSdk;
 using ClassDiagramService.Core;
 using System;
 using System.Drawing;

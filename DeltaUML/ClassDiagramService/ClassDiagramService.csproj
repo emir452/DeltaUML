@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassDiagramInfo.cs" />
     <Compile Include="Core\ClassDiagram.cs" />
     <Compile Include="Core\ClassDiagramCreationStrategi.cs" />
     <Compile Include="Persistence\ClassDiagramDao.cs" />
