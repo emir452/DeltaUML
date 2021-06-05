@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace ClassDiagramService.Presentation
 
 {
-    public class ClassDiagramControl : UserControl
+    public class ClassDiagramControl :  UserControl, IMainControl
     {
        
         public  Core.ClassDiagram currentDiagram { get; set; }
