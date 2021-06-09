@@ -5,12 +5,10 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 namespace ClassDiagramService.Presentation
-
 {
-    public class ClassDiagramControl :  UserControl, IMainControl
+    public class ClassDiagramControl : CustomControl
     {
-       
-        public  Core.ClassDiagram currentDiagram { get; set; }
+public  Core.ClassDiagram currentDiagram { get; set; }
         private IClassDiagramDao diagramWriter;
         public TextBox txtDiagramBodi { get; set; }
         private ClassDiagramViewMenuManager menuManager;

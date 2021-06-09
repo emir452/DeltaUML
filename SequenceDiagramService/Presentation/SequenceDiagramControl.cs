@@ -12,7 +12,7 @@ using SequenceDiagramService.Core;
 using DeltaUMLSdk;
 namespace SequenceDiagramService.Presentation
 {
-    public partial class SequenceDiagramControl : UserControl, IMainControl
+    public partial class SequenceDiagramControl :  CustomControl
     {
         private FRMObjectViewer objectViewer;
         private FRMInteractionViewer interactionViewer;

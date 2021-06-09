@@ -8,7 +8,7 @@ namespace ClassDiagramService.Core
 {
     public class ClassDiagramCreationStrategi : IdiagramCreationStrategi
     {
-        private UtilitiManager fileSistem;
+private UtilitiManager fileSistem;
         private ClassDiagramService.Persistence.IClassDiagramDao diagramDao;
         public ClassDiagramCreationStrategi()
         {

@@ -57,7 +57,9 @@
     <Compile Include="IComposite.cs" />
     <Compile Include="IdiagramCreationStrategi.cs" />
     <Compile Include="IDiagramDao.cs" />
-    <Compile Include="IMainControl.cs" />
+    <Compile Include="CustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="INodeContextMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnSuportedOperationException.cs" />
