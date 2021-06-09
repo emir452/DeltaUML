@@ -1,11 +1,5 @@
-[Bb]in/
-[Ll]ibrary/
-[Ll]ocal[Cc]ache/
-[Oo]bj/
-[Tt]emp/
-[Ee]xportedObj/
-*.booproj
-*.csproj
+bin
+obj
 *.sln
-*.suo
-*.svd
+*.csproj
+*.user
